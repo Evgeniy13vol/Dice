@@ -1,19 +1,15 @@
 let counter = 0;
 
 function magic() {
-  /* ליצור מספרים רנדומליים */
-  let num1 = Math.floor(Math.random() * 6) + 1; // 1 - 6
-  let num2 = Math.floor(Math.random() * 6) + 1; // 1 - 6
+  let num1 = Math.floor(Math.random() * 6) + 1; 
+  let num2 = Math.floor(Math.random() * 6) + 1;
 
-  /* לתפוס את האלמנטים של התמונות */
-  let dice_1 = document.getElementById("dice_1"); // תמונה ראשונה
-  let dice_2 = document.getElementById("dice_2"); // תמונה שנייה
+  let dice_1 = document.getElementById("dice_1"); 
+  let dice_2 = document.getElementById("dice_2"); 
 
-  /* לשים במקור של התמונה את הצירוף של המספרים הרנדומליים פלוס הסיומת */
   dice_1.src = num1 + ".png";
   dice_2.src = num2 + ".png";
 
-  /* אתפוס את הפסקה שבה נכריז על דאבל */
   let para = document.getElementById("result");
 
   if (num1 === num2) {
